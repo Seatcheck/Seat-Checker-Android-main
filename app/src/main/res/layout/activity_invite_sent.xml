@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.InviteSentActivity">
+    <include layout="@layout/app_bar_layout_for_activity_seat"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"/>
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/nd_light_pink_gray">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_invited_user"
+                android:layout_width="80dp"
+                android:scaleType="centerCrop"
+                android:layout_height="80dp"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="1dp"
+                android:src="@drawable/user"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+        <app.rubbickcube.sido.fonts.robotoLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request Sent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/nd_text_color"
+            android:textSize="22sp"
+            />
+        <app.rubbickcube.sido.fonts.robotoLight
+            android:id="@+id/text_invited_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waiting for Yasir Ameen to respond"
+            android:gravity="center"
+            android:textColor="@color/nd_text_color"
+            android:textSize="16sp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="6dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:id="@+id/btn_view_profile"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_invite_list"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/me"
+                    android:scaleType="centerCrop"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center|left"
+                android:layout_width="0dp"
+                android:layout_marginLeft="12dp"
+                android:layout_weight=".7"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent">
+
+                <app.rubbickcube.sido.fonts.robotoRegular
+                    android:id="@+id/txt_name_invite_list"
+                    android:text="Yasir Amee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/appBlack"
+                    />
+                <com.github.curioustechizen.ago.RelativeTimeTextView
+                    android:id="@+id/txt_mins_ago_invite_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="12 min. ago"
+                    android:textColor="@color/appBlack"/>
+
+
+                <app.rubbickcube.sido.fonts.robotoRegular
+                    android:id="@+id/txt_view_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:visibility="invisible"
+                    android:padding="0dp"
+                    android:layout_marginTop="2dp"
+                    android:text="view profie  "
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center|right"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/btn_chat"
+                    android:src="@drawable/nd_chat_message_icon"
+                    android:layout_width="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="20dp" />
+                <ImageView
+                    android:id="@+id/btn_decline"
+                    android:src="@drawable/nd_close_icon"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <ImageView
+                    android:id="@+id/btn_accept"
+                    android:src="@drawable/nd_check_button"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

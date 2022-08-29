@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/nd_colorPrimary">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/appbar_back"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/back_arrow_new" />
+
+
+        <TextView
+            android:id="@+id/appbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="26dp"
+            android:layout_centerInParent="true"
+            android:gravity="center|left"
+            android:text="Edit Profile"
+            android:textColor="@color/nd_text_color"
+            android:fontFamily="@font/montserratmedium"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:id="@+id/nd_typing_pencil"
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="26dp"
+
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@+id/appbar_back"
+            android:gravity="center|left"
+            android:src="@drawable/edit_pencil"
+            android:visibility="gone" />
+
+        <app.rubbickcube.sido.fonts.robotoLight
+            android:id="@+id/nd_user_typing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+
+            android:layout_marginTop="34dp"
+            android:layout_toRightOf="@+id/appbar_back"
+
+            android:gravity="center|left"
+            android:textColor="@color/nd_text_color"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/appbar_img"
+
+                android:visibility="gone"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

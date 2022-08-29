@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="3dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_dp"
+                android:layout_width="60dp"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/colorPrimary"
+                android:layout_height="60dp"
+                android:src="@drawable/user"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:id="@+id/restaurant_location"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="Yasir Ameen"
+                    android:textColor="@color/appBlack"
+                    />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_below="@id/restaurant_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="now"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/montserratregular"
+                android:textSize="14sp"
+                android:textColor="@color/appBlack"
+                />
+        </RelativeLayout>
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight=".25"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_invites"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="10dp"
+                android:text="Invite"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/nd_seatlive_rounded_rectangle"
+                android:src="@drawable/seat_large"
+                android:tint="@color/appBlack"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#575757"
+        android:paddingLeft="5dp"
+        android:layout_alignParentRight="true"
+        android:text="bob@fake.com"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

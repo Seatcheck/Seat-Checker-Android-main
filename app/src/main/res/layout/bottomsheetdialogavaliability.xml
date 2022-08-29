@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:background="#535035"
+    app:cardCornerRadius="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbg_white_10"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/postnewseat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post New Seat"
+            android:textSize="18sp"
+            android:textColor="@color/com_facebook_blue"
+            android:textAlignment="center"
+            android:padding="20dp"
+            />
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/postnewseat"
+            android:background="@color/gray"
+            />
+        <TextView
+            android:id="@+id/setavaliable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:textSize="18sp"
+            android:text="Set Availability"
+            android:textColor="@color/com_facebook_blue"
+            android:textAlignment="center"
+            android:padding="20dp"
+            />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/setavaliable"
+            android:background="@color/gray"
+            />
+        <TextView
+            android:id="@+id/cancelbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view2"
+            android:text="Cancel"
+            android:textSize="18sp"
+            android:textColor="#ff0000"
+            android:textAlignment="center"
+            android:padding="20dp"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

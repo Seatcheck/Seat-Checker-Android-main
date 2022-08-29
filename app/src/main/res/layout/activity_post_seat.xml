@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ef_white"
+    tools:context=".activities.PostSeatActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+
+                        layout="@layout/appbar_seat_layout" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/seat_plus"
+                        />
+                    <TextView
+                        android:id="@+id/seatcheck_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="I have Seat"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/appBlack"
+                        android:textSize="21sp"
+                        android:fontFamily="@font/montserratmedium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Post a seat for other people to \n see and join you."
+                        android:textColor="@color/appBlack"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserratregular"
+                         />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:text="Select Restaurant"
+                        android:textColor="@color/appBlack"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/montserratmedium"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/txt_select_rest"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/location_name"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="16dp"
+                            android:gravity="left|center"
+                            android:text="Type here"
+                            android:textColor="@color/colorPrimary"
+                            android:fontFamily="@font/montserratregular"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:rotation="180"
+                            android:src="@drawable/seat_location"
+                             />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/black"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="left"
+                        android:text="Select places nearby you."
+                        android:textColor="@color/appBlack"
+                        android:fontFamily="@font/montserratmedium"
+                        android:textSize="15sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/nearby_paces_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@color/appBlack"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/restaurant_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="6dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/location_name_del"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Magma Consulting Corporation PVT LTD"
+                                android:textColor="@color/colorPrimary"
+                                android:fontFamily="@font/montserratregular"
+                                android:textSize="14sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/location_icon"
+                                    android:tint="@color/colorPrimary" />
+
+                                <TextView
+                                    android:id="@+id/location_desc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+
+                                    android:lines="2"
+                                    android:paddingRight="20dp"
+                                    android:text="This is dummy line of two text which gives information about selected place"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:src="@drawable/phone_icon"
+                                    android:tint="@color/colorPrimary" />
+
+                                <TextView
+                                    android:id="@+id/location_phone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:lines="1"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha=".12"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/logo" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="13dp"
+                        android:gravity="left"
+                        android:text="For how long you want to list your seats ?"
+                        android:textColor="@color/appBlack"
+                        android:fontFamily="@font/montserratmedium"
+                        android:textSize="15sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/txt_select_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/seat_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="16dp"
+                            android:gravity="left|center"
+                            android:hint="HH : MM"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimary"
+                            android:fontFamily="@font/montserratregular"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/seat_time" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/black"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="6dp"
+                        android:gravity="left"
+                        android:text="How many seats are you offering ?"
+                        android:textColor="@color/appBlack"
+                        android:fontFamily="@font/montserratmedium"
+                        android:textSize="15sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/txt_select_seat"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/seat_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="16dp"
+                            android:gravity="left|center"
+                            android:hint="00"
+                            android:textColorHint="@color/colorPrimary"
+                            android:textColor="@color/colorPrimary"
+                            android:fontFamily="@font/montserratregular"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                             />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/black"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="6dp"
+                        android:gravity="left"
+                        android:text="Make it more interesting"
+                        android:textColor="@color/appBlack"
+                        android:fontFamily="@font/montserratmedium"
+                        android:textSize="15sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/txt_select_interesting"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/interesting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="16dp"
+                            android:gravity="left|center"
+                            android:hint="Whats on you?"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimary"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/montserratmedium"
+                            />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/arrow_right" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/black"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/txt_select_onmap"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/seat_onmap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="16dp"
+                            android:gravity="left|center"
+                            android:text="Post my seat on map!"
+                            android:textColor="@color/appBlack"
+                            android:fontFamily="@font/montserratmedium"
+
+                            android:textSize="15sp" />
+
+                        <Switch
+                            android:id="@+id/mapswitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                             />
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/black"
+                        />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <RelativeLayout
+                android:id="@+id/btn_post_seat"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="40dp"
+                android:background="@drawable/button_drawable_selector">
+
+                <app.rubbickcube.sido.fonts.robotoRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Post Seat"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <com.cunoraz.gifview.library.GifView
+                    android:id="@+id/gif_view"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    custom:gif="@drawable/gif_loader" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/bottom_seat_sheet" />
+
+        <include layout="@layout/bottom_time_sheet" />
+
+        <include layout="@layout/bottom_interesting_sheet" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

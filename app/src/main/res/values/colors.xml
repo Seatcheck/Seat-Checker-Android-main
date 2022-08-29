@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D7533F</color>
+    <color name="colorPrimaryDark">#D7533F</color>
+    <color name="colorAccent">#D7533F</color>
+
+    <color name="nd_colorPrimary">#F8F8F8</color>
+    <color name="nd_colorPrimaryDark">#FFFFFF</color>
+    <color name="nd_text_color">#505050</color>
+    <color name="nd_light_ping">#FAF3F1</color>
+    <color name="nd_light_pink_dark">#efc6bb</color>
+    <color name="nd_light_pink_gray">#FCFCFC</color>
+
+    <color name="ef_colorPrimary">#D7533F</color>
+    <color name="ef_colorPrimaryDark">#D7533F</color>
+    <color name="appBlack">#1b100e</color>
+    <color name="app_orange_pressed">#8c4030</color>
+    <color name="app_orange">#D7533F</color>
+    <color name="app_peal">#f0eff5</color>
+    <color name="green">#86A847</color>
+    <color name="gray">#E2E2E2</color>
+    <color name="darkGray">#A8A5A5</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightgray">#BDBDBD</color>
+    <color name="darkgray">#707070</color>
+
+</resources>

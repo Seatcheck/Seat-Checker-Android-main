@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+
+        android:layout_above="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager.widget.ViewPager>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        app:ci_width="6dp"
+        app:ci_height="6dp"
+        app:ci_drawable="@drawable/indicator_selected"
+        app:ci_drawable_unselected="@drawable/indicator_unselected"
+        android:layout_height="48dp"/>
+
+    <app.rubbickcube.sido.fonts.robotoRegular
+        android:id="@+id/btn_skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SKIP"
+        android:gravity="right"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:textColor="#000"
+        />
+
+
+</RelativeLayout>

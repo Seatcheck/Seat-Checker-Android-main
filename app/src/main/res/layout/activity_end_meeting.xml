@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activities.ActivityEndMeeting">
+
+
+    <RelativeLayout
+        android:id="@+id/firstrt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circular_bg_orange"></RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/dps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/me"
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_end_meeting_user"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="95dp"
+
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar" />
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+
+            android:src="@drawable/seat_white_circular" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/dps"
+        android:id="@+id/relll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/app_bar_layout_for_need_seat"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/sharing_table_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:gravity="center"
+                android:text="Meeting End"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserratsemibold"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/end_meeting_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:fontFamily="@font/montserratregular"
+                android:textColor="@color/appBlack"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:numStars="5"
+                    android:stepSize="1.0"
+
+                    android:theme="@style/RatingBar" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="left"
+
+                android:text="Tell us about it..."
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:fontFamily="@font/montserratmedium"
+                 />
+
+            <EditText
+                android:id="@+id/test_message"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/settingsbg"
+                android:gravity="left|top"
+                android:hint="Type here..."
+                android:padding="17dp"
+                android:fontFamily="@font/montserratregular"
+                android:textSize="17sp" />
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <Button
+
+        android:id="@+id/btn_post_review"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/buttonorng"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

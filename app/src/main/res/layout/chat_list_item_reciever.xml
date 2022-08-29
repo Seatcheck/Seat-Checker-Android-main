@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="35dp"
+    android:layout_marginTop="2dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_reciever_dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/me"
+            app:civ_border_color="#fff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_reciever_dp"
+            android:layout_toEndOf="@+id/img_reciever_dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:layout_toRightOf="@+id/img_reciever_dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_reciever_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/giver_chat_list_drawable"
+                android:fontFamily="@font/montserratmedium"
+                android:text="This is gonna be great chat module"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/time_expandLayout_reciever"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                app:el_duration="300"
+                app:el_expanded="true"
+                app:el_parallax="0.5">
+
+
+                <TextView
+                    android:id="@+id/tv_reciever_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="11:52 PM"
+                    android:gravity="right"
+                    android:fontFamily="@font/montserratregular"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="14sp"
+                    />
+
+
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

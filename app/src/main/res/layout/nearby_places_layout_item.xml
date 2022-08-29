@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_reciever_dp"
+            android:layout_toEndOf="@+id/img_reciever_dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:layout_toRightOf="@+id/img_reciever_dp"
+            android:orientation="vertical">
+
+
+            <app.rubbickcube.sido.fonts.robotoRegular
+                android:id="@+id/tv_places"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nearby_places_drawable"
+                android:padding="12dp"
+                android:text="This is gonna be great chat module"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

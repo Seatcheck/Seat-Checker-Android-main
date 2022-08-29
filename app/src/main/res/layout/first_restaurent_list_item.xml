@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_peal">
+
+    <RelativeLayout
+        android:background="#03A9F4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/current_location"
+            android:padding="18dp"
+            android:tint="@android:color/white"
+            />
+
+        <LinearLayout
+
+            android:layout_width="319dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="60dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="60dp">
+
+            <app.rubbickcube.sido.fonts.robotoRegular
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select this locations"
+                android:textColor="@android:color/white"
+                android:lines="1"
+
+                android:paddingRight="10dp"
+                android:textSize="16sp" />
+
+            <app.rubbickcube.sido.fonts.robotoLight
+                android:id="@+id/name_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+
+                android:lines="1"
+                android:paddingRight="10dp"
+                android:text="The good restaurent of Karachi"
+                 />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/intro_img_src_three"
+            android:layout_weight="2.4"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="0dp"
+            />
+        <TextView
+
+
+            android:text="Find Seats (Map View)"
+            android:layout_alignParentBottom="true"
+            android:layout_weight=".1"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            />
+        <TextView
+
+
+            android:text="Find nearby seats on a map, you can switch to list from top navigation"
+            android:layout_alignParentBottom="true"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:fontFamily="@font/montserratmedium"
+            android:textSize="15sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            />
+
+    </LinearLayout>
+
+
+</FrameLayout>

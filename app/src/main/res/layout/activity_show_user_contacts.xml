@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityShowUserContacts">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+    <include layout="@layout/app_bar_layout"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#D3D3D3"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/search_rounded"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:padding="8dp"
+                android:tint="#D3D3D3"
+                android:layout_weight=".1"
+                android:layout_height="match_parent"
+                android:src="@drawable/search"
+
+                />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:background="#fff"
+                android:hint="Search contacts"
+                android:textSize="16sp"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/search_cancel"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:tint="#D3D3D3"
+                android:layout_weight=".1"
+                android:layout_height="match_parent"
+                android:src="@drawable/cancel_white"
+                />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/lvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </ListView>
+
+</LinearLayout>

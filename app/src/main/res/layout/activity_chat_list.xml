@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ChatListActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+        <include
+
+            layout="@layout/app_bar_layout"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.5"
+            android:background="#d3d3d3" />
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/rv_chat_list"
+        android:layout_width="match_parent"
+        android:divider="#d3d3d3"
+        android:dividerHeight="1px"
+
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+
+        >
+
+    </ListView>
+
+
+</LinearLayout>

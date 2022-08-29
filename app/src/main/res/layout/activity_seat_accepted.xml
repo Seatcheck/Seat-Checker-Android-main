@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".activities.ActivitySeatAccepted">
+
+    <RelativeLayout
+        android:id="@+id/firstrt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circular_bg_orange"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/him"
+
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/me"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="95dp"
+
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar" />
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+
+            android:src="@drawable/seat_white_circular" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dps">
+
+
+
+        <include
+            layout="@layout/app_bar_layout_for_need_seat"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="30dp"
+                android:src="@drawable/bridge"
+                android:tint="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="85dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/bridge"
+                    android:scaleType="centerCrop"
+
+                    />
+
+
+                <ImageView
+                    android:id="@+id/bridge"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+
+                    />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txt_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserratmedium"
+                android:gravity="end"
+                android:lines="1"
+                android:paddingLeft="6dp"
+                android:text="Yasir Ameen"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:fontFamily="@font/montserratmedium"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/txt_his"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserratmedium"
+                android:lines="1"
+                android:paddingRight="6dp"
+                android:text="Yasir Ameen"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/member_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/appBlack"
+                android:textSize="22sp" />
+
+
+            <LinearLayout
+                android:padding="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/nd_seatlive_rounded_rectangle"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/plates" />
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/restaurant_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserratregular"
+                                android:gravity="center"
+                                android:textColor="@color/appBlack"
+                                android:textSize="14sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_cancel_seatcheck"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/buttonorngbrder"
+                android:text="Cancel SeatCheck"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/btn_end_meeting"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonorng"
+                android:text="End Meeting"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_time"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#f8f9f9"
+    android:orientation="vertical"
+    android:padding="@dimen/ef_padding_medium"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
+
+        <app.rubbickcube.sido.fonts.robotoRegular
+            android:id="@+id/seat_count_time_cancel_av"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Cancel"
+            android:textColor="@color/ef_colorPrimary"
+            android:textSize="16sp" />
+
+        <app.rubbickcube.sido.fonts.robotoRegular
+            android:id="@+id/seat_count_time_done_av"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Done"
+            android:textColor="@color/ef_colorPrimary"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDBDBD" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="25dp"
+                android:background="#BDBDBD"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.aigestudio.wheelpicker.WheelPicker
+                android:visibility="gone"
+                android:id="@+id/wheel_hour"
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                app:wheel_atmospheric="true"
+                app:wheel_curved="true"
+                app:wheel_cyclic="false"
+                app:wheel_item_align="right"
+                app:wheel_item_text_color="#BDBDBD"
+                app:wheel_item_text_size="20sp"
+                app:wheel_selected_item_text_color="#000000" />
+
+            <app.rubbickcube.sido.fonts.robotoRegular
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:gravity="center"
+                android:text="hour"
+                android:textColor="#000"
+                android:textSize="20sp"
+                />
+
+            <io.blackbox_vision.wheelview.view.WheelView
+                android:id="@+id/wheel_min_av"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp"
+                android:nestedScrollingEnabled="true"
+                app:canLoop="true"
+                app:centerTextColor="#ff000000"
+                app:lineColor="@color/colorPrimary"
+                app:textSize="16sp"
+                app:topBottomTextColor="#D5D5D5" />
+
+            <app.rubbickcube.sido.fonts.robotoRegular
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+               android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="min"
+                android:textColor="#000"
+                android:textSize="20sp"
+
+                />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/mins_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

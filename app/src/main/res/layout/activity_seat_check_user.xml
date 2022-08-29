@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/app_bar_seatcheck"
+        layout="@layout/app_bar_layout_for_activity_seat"/>
+
+
+    <RelativeLayout
+        android:id="@+id/firstrt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circular_bg_orange"
+        >
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/imgrt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/seatcheck_live_user_dp"
+            android:layout_width="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar" />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+            android:layout_below="@id/imgrt"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:elevation="4dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/seatcheck_other_user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/montserratsemibold"
+                            android:text="Yasir Ameen"
+                            android:textColor="@color/appBlack"
+                            />
+
+                        <TextView
+                            android:id="@+id/seatcheck_user_miles_away"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:lines="1"
+                            android:fontFamily="@font/montserratregular"
+                            android:gravity="center_horizontal"
+                            android:ellipsize="end"
+                            android:text="1 mile away"
+                            android:textColor="@color/appBlack"
+                            />
+
+                        <RelativeLayout
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/nd_seatlive_rounded_rectangle"
+                            android:layout_height="wrap_content">
+
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginRight="6dp"
+                                    android:padding="20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/img_restaurant"
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/plates"
+                                        />
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="6dp"
+                                        android:layout_marginRight="6dp"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="4dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/seatcheck_location_name_user"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:ellipsize="end"
+                                                android:lines="1"
+                                                android:text="Magma Consulting Corporation PVT LTD"
+                                                android:textColor="@color/appBlack"
+                                                android:textSize="19sp"
+                                                android:fontFamily="@font/montserratmedium"
+                                                />
+
+                                            <TextView
+                                                android:id="@+id/seatcheck_location_desc_user"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:ellipsize="end"
+                                                android:lines="2"
+                                                android:paddingRight="20dp"
+                                                android:text="This is dummy line of two text which gives information about selected place"
+                                                android:textColor="@color/appBlack"
+                                                android:fontFamily="@font/montserratregular"
+                                                android:textSize="14sp" />
+
+                                        </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/nd_seatlive_rounded_rectangle"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:padding="20dp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginRight="6dp"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/img_now"
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/time"
+                                        />
+                                    <LinearLayout
+                                        android:layout_marginLeft="4dp"
+                                        android:orientation="vertical"
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="19sp"
+                                            android:fontFamily="@font/montserratmedium"
+                                            android:textStyle="bold"
+                                            android:lines="1"
+                                            android:ellipsize="end"
+                                            android:text="NOW"
+                                            android:textColor="@color/appBlack"
+                                            />
+                                        <TextView
+                                            android:id="@+id/current_time"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:lines="2"
+                                            android:textColor="@color/appBlack"
+                                            android:ellipsize="end"
+                                            android:paddingRight="20dp"
+                                            android:textSize="14sp"
+                                            android:fontFamily="@font/montserratregular"
+                                            android:text="now"
+                                            />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+
+                            >
+                            <TextView
+                                android:id="@+id/seatcheck_other_user_ne"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="17sp"
+                                android:gravity="center"
+                                android:text="Seat removes in"
+                                android:fontFamily="@font/montserratregular"
+                                android:textColor="@color/appBlack"
+                                />
+
+
+                            <LinearLayout
+                                android:visibility="visible"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/c_hours"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="00"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="45sp"
+                                    android:fontFamily="@font/montserratlight"
+                                    android:gravity="center"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=":"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="45sp"
+                                    android:fontFamily="@font/montserratlight"
+                                    android:gravity="center"
+                                    />
+                                <TextView
+                                    android:id="@+id/c_mins_user"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
+                                    android:text="00"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="45sp"
+                                    android:fontFamily="@font/montserratlight"
+                                    android:gravity="center"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=":"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_marginRight="4dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="45sp"
+                                    android:fontFamily="@font/montserratlight"
+                                    android:gravity="center"
+                                    />
+                                <TextView
+                                    android:id="@+id/c_secs_user"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="00"
+                                    android:layout_marginLeft="6dp"
+
+                                    android:textColor="@android:color/black"
+                                    android:textSize="45sp"
+                                    android:fontFamily="@font/montserratlight"
+                                    android:gravity="center"
+                                    />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+            <ImageView
+                android:id="@+id/img_bottom_curve"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="-4dp"
+                android:visibility="gone"
+                android:scaleType="fitXY"
+
+                />
+
+
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="260dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_margin="6dp"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:id="@+id/seatcheck_other_user_dp"
+                    android:layout_width="60dp"
+                    android:src="@drawable/me"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <app.rubbickcube.sido.fonts.robotoRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="12dp"
+
+                        android:textStyle="bold"
+                        android:text="Yasir Ameen"
+                        android:textColor="@android:color/white"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="#50ffffff"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/stroke_drawabe_orange"
+                android:layout_marginTop="6dp"
+                android:visibility="visible"
+
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:layout_height="120dp"
+                    >
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:id="@+id/restaurant_location"
+                        android:orientation="vertical"
+
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_marginTop="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <app.rubbickcube.sido.fonts.robotoRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:lines="1"
+                            android:layout_marginLeft="6dp"
+                            android:ellipsize="end"
+                            android:text="Magma Consulting Corporation PVT LTD"
+                            android:textColor="@android:color/white"
+                            />
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginRight="10dp"
+
+                                android:src="@drawable/location_icon"
+                                android:tint="@android:color/white" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="2"
+                                android:textColor="@android:color/white"
+                                android:ellipsize="end"
+                                android:paddingRight="20dp"
+                                android:singleLine="true"
+                                android:textSize="10sp"
+                                android:text="This is dummy line of two text which gives information about selected place"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="1dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/phone_icon"
+                                android:tint="@android:color/white" />
+                            <TextView
+                                android:visibility="gone"
+                                android:id="@+id/location_phone_user"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:text="92123141"
+                                android:textSize="12sp"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@android:color/white"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="1dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/clock"
+                                android:tint="@android:color/white" />
+
+                            <com.github.curioustechizen.ago.RelativeTimeTextView
+                                android:id="@+id/location_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:lines="1"
+                                android:text="now"
+                                android:textColor="@android:color/white"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="1dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/seat_large"
+                                android:tint="@android:color/white" />
+                            <TextView
+                                android:id="@+id/location_seat_user"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:text="3"
+                                android:textSize="12sp"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@android:color/white"
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginTop="6dp"
+                android:background="#50ffffff"
+                />
+            <app.rubbickcube.sido.fonts.robotoThinBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time Left"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:gravity="center"
+                />
+
+            <LinearLayout
+                android:visibility="visible"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <app.rubbickcube.sido.fonts.robotoRegularBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    />
+                <app.rubbickcube.sido.fonts.robotoThinBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    />
+                <app.rubbickcube.sido.fonts.robotoRegularBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="00"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    />
+                <app.rubbickcube.sido.fonts.robotoThinBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    />
+                <app.rubbickcube.sido.fonts.robotoRegularBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:layout_marginLeft="6dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_below="@id/app_bar_seatcheck"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+        <Button
+            android:id="@+id/btn_prty_off"
+
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:text="Party of"
+            android:textColor="@android:color/white"
+            android:background="@drawable/light_corner_drawable"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:layout_marginRight="30dp"
+
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <Button
+            android:id="@+id/btn_remove_seat_user"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/buttonorngbrder"
+            android:text="Cancel SeatCheck"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/btn_take_seat_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/buttonorng"
+            android:text="Take a Seat"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/seat_live_layout"
+    android:background="@color/ef_white"
+    tools:context=".activities.ActivitySeatLive">
+<include
+    android:id="@+id/app_bar_seatcheck"
+    layout="@layout/app_bar_layout_for_activity_seat"/>
+
+    <LinearLayout
+        android:layout_below="@id/app_bar_seatcheck"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="6dp"
+            android:elevation="4dp"
+            android:layout_height="300dp">
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/seatcheck_live_user_dp"
+                            android:layout_width="70dp"
+                            android:src="@drawable/me"
+                            android:layout_height="70dp"
+                            android:scaleType="centerCrop"
+                            />
+
+
+                    </RelativeLayout>
+
+                    <app.rubbickcube.sido.fonts.robotoRegular
+                        android:id="@+id/seatcheck_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Yasir Ameen"
+                        android:textColor="@color/appBlack"
+                        />
+
+                    <RelativeLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/nd_seatlive_rounded_rectangle"
+                        android:layout_height="50dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/img_restaurant"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    />
+                                <LinearLayout
+                                    android:layout_marginLeft="4dp"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <app.rubbickcube.sido.fonts.robotoRegular
+                                        android:id="@+id/seatcheck_location_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold"
+                                        android:lines="1"
+                                        android:ellipsize="end"
+                                        android:text="Magma Consulting Corporation PVT LTD"
+                                        android:textColor="@color/appBlack"
+                                        />
+                                    <TextView
+                                        android:id="@+id/seatcheck_location_desc"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:lines="2"
+                                        android:textColor="@color/appBlack"
+                                        android:ellipsize="end"
+                                        android:paddingRight="20dp"
+                                        android:textSize="6sp"
+                                        android:text="This is dummy line of two text which gives information about selected place"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/nd_seatlive_rounded_rectangle"
+                        android:layout_height="50dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/img_now"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    />
+                                <LinearLayout
+                                    android:layout_marginLeft="4dp"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <app.rubbickcube.sido.fonts.robotoRegular
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold"
+                                        android:lines="1"
+                                        android:ellipsize="end"
+                                        android:text="NOW"
+                                        android:textColor="@color/appBlack"
+                                        />
+                                    <TextView
+                                        android:id="@+id/current_time"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:lines="2"
+                                        android:textColor="@color/appBlack"
+                                        android:ellipsize="end"
+                                        android:paddingRight="20dp"
+                                        android:textSize="6sp"
+                                        android:text="now"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="visible"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <app.rubbickcube.sido.fonts.robotoThin
+                        android:id="@+id/c_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:textColor="@android:color/black"
+                        android:textSize="28sp"
+                        android:gravity="center"
+                        />
+                    <app.rubbickcube.sido.fonts.robotoThin
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="28sp"
+                        android:gravity="center"
+                        />
+                    <app.rubbickcube.sido.fonts.robotoThin
+                        android:id="@+id/c_mins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="00"
+                        android:textColor="@android:color/black"
+                        android:textSize="28sp"
+                        android:gravity="center"
+                        />
+                    <app.rubbickcube.sido.fonts.robotoThin
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="28sp"
+                        android:gravity="center"
+                        />
+                    <app.rubbickcube.sido.fonts.robotoThin
+                        android:id="@+id/c_secs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:layout_marginLeft="6dp"
+
+                        android:textColor="@android:color/black"
+                        android:textSize="28sp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <ImageView
+            android:id="@+id/img_bottom_curve"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="-4dp"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btn_extend_time_green"
+            android:layout_width="match_parent"
+            android:text="Extend Time"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:visibility="visible"
+            android:layout_marginBottom="6dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounder_button_green"
+            android:textColor="@android:color/white"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_remove_seat"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="Remove seat"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="15dp"
+            android:textAllCaps="false"
+            android:elevation="6dp"
+            android:textColor="@android:color/white"
+            android:layout_height="45dp" >
+        <app.rubbickcube.sido.fonts.robotoThin
+
+            android:text="REMOVE SEAT"
+            android:gravity="center"
+            android:textColor="@color/nd_light_pink_dark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/btn_cancel_seat"
+            android:layout_weight="1"
+        android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="35dp"
+            android:textAllCaps="false"
+            android:text="Cancel seat check"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_corner"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/nd_colorPrimary"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/appbar_back_need_seat"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:tint="@color/nd_text_color"
+            android:src="@drawable/drawber_icon" />
+
+        <ImageView
+            android:id="@+id/appbar_back_need_find"
+            android:layout_width="wrap_content"
+            android:gravity="center|left"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/appbar_back_need_seat"
+            android:layout_toRightOf="@+id/appbar_back_need_seat"
+            android:layout_marginLeft="18dp"
+            android:tint="@color/colorPrimaryDark"
+
+            android:layout_alignParentTop="true"
+
+            android:src="@drawable/find" />
+        <app.rubbickcube.sido.fonts.robotoRegular
+            android:visibility="gone"
+            android:id="@+id/appbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_toEndOf="@+id/appbar_back_need_seat"
+            android:layout_toRightOf="@+id/appbar_back_need_seat"
+            android:gravity="center|left"
+            android:text="Seats"
+            android:textColor="@color/nd_text_color"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/maplistbtn"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="2dp"
+            android:background="@drawable/mapbtnbg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+
+                android:id="@+id/appbar_img_map"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/location_orange"
+                 />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Map"
+                android:gravity="center"
+                android:padding="2dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/montserratmedium"
+                android:textSize="14sp"
+                 />
+            <View
+                android:layout_width="1dp"
+
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@color/gray"
+                />
+
+            <ImageView
+
+                android:id="@+id/appbar_img_list"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/list_grey"
+                />
+            <app.rubbickcube.sido.fonts.robotoRegular
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="List"
+                android:gravity="center"
+                android:padding="2dp"
+                android:fontFamily="@font/montserratmedium"
+                android:textSize="14sp"
+                android:layout_marginRight="10dp"
+                />
+
+        </LinearLayout>
+            <ImageView
+
+                android:layout_toEndOf="@+id/_appbar_img_img_invite_need_seat"
+                android:id="@+id/appbar_img_live"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:tint="@color/colorPrimaryDark"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/live_mini"
+
+                />
+            <ImageView
+                android:id="@+id/appbar_img_refresh_need_seat"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:tint="@color/nd_text_color"
+                android:layout_marginRight="6dp"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/refresh" />
+
+
+            <RelativeLayout
+
+                android:layout_toEndOf="@+id/appbar_back_need_find"
+                android:id="@+id/_appbar_img_img_invite_need_seat"
+                android:layout_width="30dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/invite_counter"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:background="@drawable/invite_count"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                     />
+
+                <ImageView
+                    android:id="@+id/appbar_img_bell_need_seat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:src="@drawable/bell_icon"
+                    android:tint="@color/colorPrimaryDark" />
+            </RelativeLayout>
+
+
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/appbar_img_chat"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:tint="@color/nd_text_color"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/nd_chat_message_icon" />
+
+            <RelativeLayout
+
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="200dp"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/appbar_img_need_seat"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="centerCrop"
+                    android:tint="@color/colorPrimaryDark"
+                    android:src="@drawable/user" />
+
+            </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

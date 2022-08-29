@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/seat_live_layout"
+    tools:context=".activities.ActivitySeatLive">
+    <include
+        android:id="@+id/app_bar_seatcheck"
+        layout="@layout/app_bar_layout_for_activity_seat"/>
+
+
+
+    <LinearLayout
+        android:layout_below="@id/app_bar_seatcheck"
+        android:orientation="vertical"
+
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="6dp"
+            android:elevation="4dp"
+            app:cardBackgroundColor="@color/nd_light_pink_gray"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="left"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/seatcheck_live_user_dp"
+                            android:layout_width="80dp"
+                            android:src="@drawable/me"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            />
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <app.rubbickcube.sido.fonts.robotoRegular
+                            android:id="@+id/seatcheck_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:gravity="left"
+                            android:textStyle="bold"
+                            android:text="Yasir Ameen"
+                            android:textColor="@color/appBlack"
+                            />
+                            <app.rubbickcube.sido.fonts.robotoLight
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:gravity="left"
+                                android:textStyle="bold"
+                                android:text="Reserved"
+                                android:textColor="@color/appBlack"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/nd_seatlive_rounded_rectangle"
+                        android:layout_height="60dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content">
+
+
+                                <LinearLayout
+                                    android:layout_marginLeft="4dp"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <app.rubbickcube.sido.fonts.robotoRegular
+                                        android:id="@+id/seatcheck_location_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold"
+                                        android:lines="1"
+                                        android:ellipsize="end"
+                                        android:text="Magma Consulting Corporation PVT LTD"
+                                        android:textColor="@color/appBlack"
+                                        />
+                                    <TextView
+                                        android:id="@+id/seatcheck_location_desc"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:lines="2"
+                                        android:textColor="@color/appBlack"
+                                        android:ellipsize="end"
+                                        android:paddingRight="20dp"
+                                        android:textSize="8sp"
+                                        android:text="This is dummy line of two text which gives information about selected place"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/nd_seatlive_rounded_rectangle"
+                        android:layout_height="60dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content">
+
+
+                                <LinearLayout
+                                    android:layout_marginLeft="4dp"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <app.rubbickcube.sido.fonts.robotoRegular
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold"
+                                        android:lines="1"
+                                        android:ellipsize="end"
+                                        android:text="NOW"
+                                        android:textColor="@color/appBlack"
+                                        />
+                                    <TextView
+                                        android:id="@+id/current_time"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:lines="2"
+                                        android:textColor="@color/appBlack"
+                                        android:ellipsize="end"
+                                        android:paddingRight="20dp"
+                                        android:textSize="8sp"
+                                        android:text="now"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <app.rubbickcube.sido.fonts.robotoThin
+            android:id="@+id/sharing_table_text"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:textSize="14sp"
+
+            android:text="You &amp; Mike are sharing table"
+            android:textColor="@color/ef_grey"
+            android:layout_marginTop="14dp"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/me_meeting"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                lignParentTop="true"
+                android:layout_toStartOf="@+id/bridge"
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/avatar"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@android:color/white"
+                android:layout_toLeftOf="@+id/bridge" />
+
+
+            <RelativeLayout
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/him_meeting"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/avatar"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/circle_seatcheck"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent">
+                <app.rubbickcube.sido.fonts.robotoLight
+                    android:id="@+id/member_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/appBlack"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="14sp"
+                    />
+
+                <app.rubbickcube.sido.fonts.robotoLight
+                    android:id="@+id/restaurant_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/appBlack"
+                    android:textSize="10sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="310dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_margin="6dp"
+                    android:layout_height="55dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:src="@drawable/me"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <app.rubbickcube.sido.fonts.robotoRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="12dp"
+
+                            android:textStyle="bold"
+                            android:text="Yasir Ameen"
+                            android:textColor="@android:color/white"
+                            />
+                        <app.rubbickcube.sido.fonts.robotoRegular
+                            android:id="@+id/seatcheck_user_miles_away"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="12dp"
+
+                            android:lines="1"
+                            android:gravity="left"
+                            android:ellipsize="end"
+                            android:text="1 mile away"
+                            android:textColor="@android:color/white"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#50ffffff"
+                    />
+                <LinearLayout
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <app.rubbickcube.sido.fonts.robotoRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:lines="1"
+                        android:layout_marginLeft="22dp"
+                        android:ellipsize="end"
+                        android:text="Magma Consulting Corporation PVT LTD"
+                        android:textColor="@android:color/white"
+                        />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="2"
+                            android:textColor="@android:color/white"
+                            android:ellipsize="end"
+                            android:paddingRight="20dp"
+                            android:textSize="10sp"
+                            android:text="This is dummy line of two text which gives information about selected place"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/clock"
+                            android:tint="@android:color/white" />
+                        <com.github.curioustechizen.ago.RelativeTimeTextView
+                            android:id="@+id/current_time_in_meeting"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:text="now"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@android:color/white"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/not_reserved"
+                            android:tint="@android:color/white" />
+                        <com.github.curioustechizen.ago.RelativeTimeTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:text="In Meeting"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@android:color/white"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:layout_marginTop="6dp"
+                    android:background="#50ffffff"
+                    />
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="-10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="-8dp"
+                            android:layout_height="100dp">
+
+                            <ImageView
+                                android:layout_marginTop="20dp"
+                                android:padding="18dp"
+
+                                android:tint="@android:color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/bridge"
+                                />
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp">
+
+
+
+                                <ImageView
+                                    android:id="@+id/bridge"
+                                    android:layout_width="35dp"
+                                    android:layout_height="wrap_content"
+
+                                    />
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="55dp"
+                                    android:layout_height="match_parent"
+                                    app:civ_border_width="1dp"
+                                    app:civ_border_color="@android:color/white"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_toStartOf="@+id/bridge"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/avatar"
+                                    android:layout_toLeftOf="@+id/bridge" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <app.rubbickcube.sido.fonts.robotoLight
+                                android:id="@+id/txt_me_meeting"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Yasir Ameen"
+                                android:gravity="end"
+                                android:lines="1"
+                                android:ellipsize="end"
+                                android:paddingLeft="6dp"
+                                android:textColor="@android:color/white"
+
+                                android:textSize="12sp"
+                                />
+                            <app.rubbickcube.sido.fonts.robotoLight
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                />
+                            <app.rubbickcube.sido.fonts.robotoLight
+                                android:id="@+id/txt_his_meeting"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:lines="1"
+                                android:ellipsize="end"
+                                android:paddingRight="6dp"
+                                android:layout_height="wrap_content"
+                                android:text="Yasir Ameen"
+                                android:textColor="@android:color/white"
+                                android:textSize="12sp"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/img_bottom_curve"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="-4dp"
+                android:scaleType="fitXY"
+
+                />
+        </LinearLayout>
+
+
+
+        <!--<LinearLayout-->
+        <!--android:visibility="gone"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="@drawable/stroke_drawabe"-->
+        <!--android:layout_marginTop="6dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="130dp">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/seatcheck_live_user_dp"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight=".3"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--/>-->
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight=".6"-->
+        <!--android:layout_height="140dp"-->
+        <!--&gt;-->
+        <!--<LinearLayout-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:id="@+id/restaurant_location"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginLeft="10dp"-->
+
+        <!--android:layout_marginTop="6dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<app.rubbickcube.sido.fonts.robotoRegular-->
+        <!--android:id="@+id/seatcheck_name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="18sp"-->
+        <!--android:layout_marginLeft="22dp"-->
+
+        <!--android:textStyle="bold"-->
+        <!--android:text="Yasir Ameen"-->
+        <!--android:textColor="@color/appBlack"-->
+        <!--/>-->
+        <!--<app.rubbickcube.sido.fonts.robotoRegular-->
+        <!--android:id="@+id/seatcheck_location_name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="12sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:lines="1"-->
+        <!--android:layout_marginLeft="22dp"-->
+        <!--android:ellipsize="end"-->
+        <!--android:text="Magma Consulting Corporation PVT LTD"-->
+        <!--android:textColor="@color/appBlack"-->
+        <!--/>-->
+        <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="12dp"-->
+        <!--android:layout_height="12dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:src="@drawable/location_icon"-->
+        <!--android:tint="@color/appBlack" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/seatcheck_location_desc"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:lines="2"-->
+
+        <!--android:textColor="@color/appBlack"-->
+        <!--android:ellipsize="end"-->
+        <!--android:paddingRight="20dp"-->
+        <!--android:textSize="10sp"-->
+        <!--android:text="This is dummy line of two text which gives information about selected place"-->
+        <!--/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="12dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/clock"-->
+        <!--android:tint="@color/appBlack" />-->
+        <!--<TextView-->
+        <!--android:id="@+id/current_time_in_meeting"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:lines="1"-->
+        <!--android:text="now"-->
+        <!--android:textSize="12sp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:textColor="@color/appBlack"-->
+        <!--/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+
+        <!--android:layout_height="wrap_content">-->
+        <!--<app.rubbickcube.sido.fonts.robotoRegular-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:text="In Meeting"-->
+        <!--android:textSize="12sp"-->
+        <!--android:gravity="center"-->
+        <!--android:background="@drawable/light_corner_drawable"-->
+        <!--/>-->
+
+        <!--</RelativeLayout>-->
+        <!--</LinearLayout>-->
+
+
+        <!--</RelativeLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btn_cancel_seat_inmeeting"
+            android:layout_width="match_parent"
+            android:text="Cancel Seatcheck"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:visibility="visible"
+            android:layout_marginBottom="6dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounder_button_gray"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <Button
+            android:id="@+id/btn_end_meeting"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:background="@drawable/rounder_button"
+            android:text="End Meeting"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

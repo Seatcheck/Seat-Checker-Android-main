@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/toplin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/app_bar_layout_for_need_seat" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/sliding_tabs_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <app.rubbickcube.sido.fonts.robotoThin
+                android:id="@+id/foundtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/viewpager_main"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+
+                android:text="No seats found in 5 milesradius, you  \n may adjust the radius with circle \n below or seat it manualluy.."
+                android:textColor="@color/appBlack"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_below="@+id/toplin"
+            android:layout_above="@+id/map_slider"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <androidx.viewpager.widget.ViewPager
+
+                android:id="@+id/viewpager_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <RelativeLayout
+                    android:id="@+id/no_pin_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <include
+                        layout="@layout/no_pins_layot_on_map"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </androidx.viewpager.widget.ViewPager>
+
+        </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/map_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/card_background"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserratmedium"
+                            android:text="Distance: "
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/range_text_main"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/montserratsemibold"
+                            android:text="1"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:fontFamily="@font/montserratsemibold"
+                            android:text="Miles"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <SeekBar
+                            android:id="@+id/seekbar_list_main"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_weight=".8"
+                            android:max="10"
+                            android:min="1"
+                            android:progress="1" />
+
+                        <ImageView
+                            android:id="@+id/btn_post_seat_main"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+
+                            android:src="@drawable/nd_add_seat" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/no_seat_layout_nd"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/find_seat" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserratmedium"
+                        android:gravity="center"
+                        android:text="No Nearby Seats"
+                        android:textColor="@color/appBlack"
+                        android:textSize="19sp" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/montserratregular"
+                        android:gravity="center"
+                        android:text="If you have seats avaliable post them by \n tapping the add button above"
+                        android:textColor="@color/appBlack"
+                        android:textSize="11sp" />
+
+                    <app.rubbickcube.sido.fonts.robotoThin
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="center"
+                        android:text="OR"
+                        android:textColor="@color/appBlack"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/img_magnifier"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="60dp"
+                        android:layout_weight="1"
+                        android:elevation="6dp"
+                        android:text="Remove seat"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:visibility="gone"
+                        app:cardCornerRadius="15dp"
+                        app:cardUseCompatPadding="true">
+
+                        <app.rubbickcube.sido.fonts.robotoRegularBold
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Explore People"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:foregroundGravity="center"
+            app:layout_anchorGravity="center_vertical|center_horizontal" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:alpha=".7"
+    />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/btn_refres_icon_need_seat"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/refresh_icon_new"
+            />
+
+        <app.rubbickcube.sido.fonts.robotoLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No nearby seats"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <app.rubbickcube.sido.fonts.robotoLight
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you have seats post them here"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"
+            android:textColor="@android:color/white"
+            />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="40dp"
+            android:src="@drawable/dash_line"
+            />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/btn_post_seat_from_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/add_fab"
+        />
+</RelativeLayout>

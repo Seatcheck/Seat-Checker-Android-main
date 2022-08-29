@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.FetchPostFragment">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <ListView
+          android:id="@+id/post_list"
+          android:layout_above="@id/map_slider"
+          android:divider="@android:color/transparent"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+
+      <LinearLayout
+          android:visibility="gone"
+          android:orientation="vertical"
+          android:id="@+id/map_slider"
+          android:layout_alignParentBottom="true"
+          android:layout_width="match_parent"
+          android:layout_height="80dp">
+
+         <LinearLayout
+             android:layout_marginTop="5dp"
+             android:layout_marginLeft="16dp"
+             android:orientation="horizontal"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+
+            <app.rubbickcube.sido.fonts.robotoRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance (Miles)"
+                />
+
+            <app.rubbickcube.sido.fonts.robotoRegular
+                android:id="@+id/range_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorPrimary"
+                android:text="1"
+                />
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_marginBottom="5dp"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+            <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+                android:id="@+id/seekbar_list"
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_marginTop="10dp"
+                app:corner_radius="10"
+                app:min_value="2"
+                android:layout_marginLeft="6dp"
+                app:max_value="10"
+                app:bar_color="@color/colorPrimary"
+                app:bar_highlight_color="@color/colorPrimary"
+                app:left_thumb_color="@color/colorPrimary"
+                app:left_thumb_color_pressed="@color/colorPrimaryDark"
+                android:layout_height="match_parent"/>
+
+
+            <ImageView
+                android:id="@+id/btn_post_seat_frag"
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:padding="2dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/add_fab"
+                />
+
+         </LinearLayout>
+      </LinearLayout>
+   </RelativeLayout>
+
+</FrameLayout>

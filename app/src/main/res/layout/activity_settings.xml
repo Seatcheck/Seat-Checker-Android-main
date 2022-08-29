@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+        <include layout="@layout/app_bar_layout"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settingsbg"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:textColor="@color/appBlack"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserratmedium"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:gravity="center|left"
+                android:text="Privacy"
+                />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/privacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                />
+        </RelativeLayout>
+
+
+
+        <ListView
+            android:id="@+id/settingList"
+            android:divider="@null"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:dividerHeight="10.0sp"
+            android:layout_height="wrap_content">
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/deleteaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settingsbg"
+            android:layout_marginTop="10.0sp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:textColor="#FF0000"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserratmedium"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:gravity="center|left"
+                android:text="Delete Account"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

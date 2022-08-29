@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="right"
+        android:layout_marginLeft="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sender_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/donor_chat_list_drawable"
+            android:text="Hi i think now its fine and shide like a sky and the moon and the sri lana"
+            android:textColor="#fff"
+            android:fontFamily="@font/montserratmedium"
+            android:textSize="14sp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="00dp"
+            android:orientation="horizontal">
+
+
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/time_expandLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                app:el_duration="300"
+                app:el_expanded="true"
+                app:el_parallax="0.5">
+
+                <TextView
+                    android:id="@+id/tv_message_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seen 03:45PM"
+                    android:gravity="right"
+                    android:fontFamily="@font/montserratregular"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp" />
+
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/img_status"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:src="@drawable/chat_sent"
+
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
+</LinearLayout>

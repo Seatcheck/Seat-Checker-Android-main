@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/myLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="90dp"
+        android:backgroundTint="#d3efda"
+        android:tint="@android:color/background_dark"
+        android:src="@android:drawable/ic_menu_mylocation"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <fragment
+        class="app.rubbickcube.seatcheck.fragments.MyMapPostFragment"
+        android:id="@+id/map"
+        android:layout_above="@+id/map_slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/map_slider"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <app.rubbickcube.sido.fonts.robotoRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance (Miles)"
+                />
+            <app.rubbickcube.sido.fonts.robotoRegular
+                android:id="@+id/range_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorPrimary"
+                android:text="1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+                android:id="@+id/seekbar_map"
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_marginTop="10dp"
+                app:corner_radius="10"
+                app:min_value="1"
+                android:layout_marginLeft="6dp"
+                app:max_value="10"
+                app:bar_color="@color/colorPrimary"
+                app:bar_highlight_color="@color/colorPrimary"
+                app:left_thumb_color="@color/colorPrimary"
+                app:left_thumb_color_pressed="@color/colorPrimaryDark"
+
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:padding="2dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/add_fab"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

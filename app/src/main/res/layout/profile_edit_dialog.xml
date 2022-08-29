@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_profile_avatar"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/avatar"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/btn_profile_change"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Change"
+                        android:layout_marginTop="2dp"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center|bottom"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".3"
+                        android:text="NAME"
+                        android:textColor="#585858"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserratmedium"
+                        android:gravity="center|left"
+                        android:layout_height="match_parent" />
+
+                    <EditText
+                        android:id="@+id/et_profile_name"
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:hint="Name"
+                        android:textColorHint="#585858"
+                        android:textColor="#000000"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserratmedium"
+                        android:backgroundTint="@android:color/transparent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".3"
+                        android:text="DISPLAY NAME"
+                        android:textColor="#585858"
+
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserratmedium"
+                        android:gravity="center|left"
+                        android:layout_height="match_parent" />
+
+                    <EditText
+                        android:id="@+id/et_profile_displayname"
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:hint="Name"
+                        android:textColorHint="#585858"
+                        android:textColor="#000000"
+                        android:singleLine="true"
+                        android:text="Yasir Ameen"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserratmedium"
+                        android:backgroundTint="@android:color/transparent"
+                        android:layout_height="match_parent" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".3"
+                        android:text="About Me"
+                        android:textColor="#585858"
+
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserratmedium"
+                        android:gravity="center|left"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/et_profile_bio"
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:hint="About"
+                        android:textColorHint="#585858"
+                        android:textColor="#000000"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserratmedium"
+
+                        android:backgroundTint="@android:color/transparent"
+                        android:layout_height="match_parent" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".3"
+                        android:text="STATUS"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserratmedium"
+                        android:textColor="#585858"
+
+                        android:gravity="center|left"
+                        android:layout_height="match_parent" />
+
+                    <EditText
+                        android:id="@+id/et_profile_status"
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:hint="Status"
+                        android:singleLine="true"
+                        android:textColorHint="#585858"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserratmedium"
+                        android:backgroundTint="@android:color/transparent"
+                        android:layout_height="match_parent" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"  />
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".3"
+                        android:text="EMAIL"
+                        android:textColor="#585858"
+
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserratmedium"
+                        android:gravity="center|left"
+                        android:layout_height="match_parent" />
+
+                    <EditText
+                        android:id="@+id/et_profile_email"
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserratmedium"
+                        android:enabled="false"
+                        android:singleLine="true"
+                        android:textColorHint="#585858"
+                        android:textColor="#000000"
+                        android:backgroundTint="@android:color/transparent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".3"
+                        android:text="PHONE"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserratmedium"
+                        android:textColor="#585858"
+
+                        android:gravity="center|left"
+                        android:layout_height="match_parent" />
+
+                    <EditText
+                        android:id="@+id/et_profile_phone"
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:hint="Phone"
+                        android:singleLine="true"
+                        android:inputType="phone"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserratmedium"
+                        android:textColorHint="#585858"
+                        android:textColor="#000000"
+                        android:backgroundTint="@android:color/transparent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_profile_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Update"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserratmedium"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="18dp"
+                        android:background="@drawable/buttonorng"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+    <ImageView
+        android:id="@+id/btn_close_btn_orange"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_margin="6dp"
+        android:layout_height="30dp"
+        android:src="@drawable/close_btn_orange"
+        />
+</RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

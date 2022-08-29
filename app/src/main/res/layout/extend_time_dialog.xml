@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="6dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="#fff"
+                android:text="Select time to extend"
+                android:fontFamily="@font/montserratmedium"
+                android:background="@color/colorPrimary"
+                android:textSize="14sp"
+                android:gravity="center"
+                />
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BDBDBD"
+                        />
+                    <View
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#BDBDBD"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="110dp">
+
+                    <com.aigestudio.wheelpicker.WheelPicker
+                        android:id="@+id/wheel_hour"
+                        android:layout_width="80dp"
+                        android:layout_height="125dp"
+                        app:wheel_atmospheric="true"
+                        app:wheel_curved="true"
+                        app:wheel_cyclic="true"
+                        app:wheel_item_align="right"
+                        app:wheel_item_text_color="#BDBDBD"
+                        app:wheel_selected_item_text_color="#000000"
+                        app:wheel_item_text_size="20sp"/>
+                    <app.rubbickcube.sido.fonts.robotoRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="hour"
+                        android:layout_marginLeft="6dp"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textColor="#000"
+
+                        />
+                    <com.aigestudio.wheelpicker.WheelPicker
+                        android:id="@+id/wheel_min"
+                        android:layout_width="60dp"
+                        android:layout_height="110dp"
+                        app:wheel_atmospheric="true"
+                        app:wheel_curved="true"
+                        app:wheel_cyclic="true"
+                        android:layout_gravity="left"
+                        app:wheel_item_align="right"
+                        app:wheel_item_text_color="#BDBDBD"
+                        app:wheel_selected_item_text_color="#000000"
+                        app:wheel_item_text_size="20sp"/>
+
+                    <app.rubbickcube.sido.fonts.robotoRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="min"
+                        android:layout_marginLeft="6dp"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textColor="#000"
+
+                        />
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/hour"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/mins"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/dialog_btn_cancel_extend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/buttonorngbrder"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="12dp"
+                    android:text="Cancel"
+                    />
+                <Button
+                    android:id="@+id/dialog_btn_done_change"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rounder_button"
+                    android:gravity="center"
+                    android:text="Done"
+                    />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

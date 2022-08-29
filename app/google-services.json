@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "812900072180",
+    "firebase_url": "https://seatcheck-db29c.firebaseio.com",
+    "project_id": "seatcheck-db29c",
+    "storage_bucket": "seatcheck-db29c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812900072180:android:59fe49b3cd30462b",
+        "android_client_info": {
+          "package_name": "app.rubbickcube.seatcheck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812900072180-nubj248j53coffl1sc921o4s9jas0c3l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.rubbickcube.seatcheck",
+            "certificate_hash": "6a017c58a615c7fdf50e29edda539cef09ce30dd"
+          }
+        },
+        {
+          "client_id": "812900072180-32uashgvvh535nejeedliodek7kdk420.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.rubbickcube.seatcheck",
+            "certificate_hash": "6b24b749104a29e5a9210256c461ce88fbd891af"
+          }
+        },
+        {
+          "client_id": "812900072180-vnpan4ho5r21tkdjk1ghdhpsjg6gqvfi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.rubbickcube.seatcheck",
+            "certificate_hash": "b00c474012509230be43c02c1a34232d7b84a868"
+          }
+        },
+        {
+          "client_id": "812900072180-36md0acuhfhcc7p1fkrcjipcgvc44t51.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.rubbickcube.seatcheck",
+            "certificate_hash": "261343bec085ee207198537bbb00b8358839a39e"
+          }
+        },
+        {
+          "client_id": "812900072180-l7egk5of6ptr8j7jv2hu2h6kfjqv10pi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdKByV0HtvHSVAGqgEiX7U9jiNcxmOs3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812900072180-l7egk5of6ptr8j7jv2hu2h6kfjqv10pi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "812900072180-g31i0311d7f3d31ob1lheb78drg6bi7n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.akber.SeatCheckApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/interesting_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#f8f9f9"
+    android:orientation="vertical"
+    android:padding="@dimen/ef_padding_medium"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
+
+        <app.rubbickcube.sido.fonts.robotoRegular
+            android:id="@+id/interesting_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Cancel"
+            android:textColor="@color/ef_colorPrimary"
+            android:textSize="16sp" />
+
+        <app.rubbickcube.sido.fonts.robotoRegular
+            android:id="@+id/interesting_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Done"
+            android:textColor="@color/ef_colorPrimary"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <io.blackbox_vision.wheelview.view.WheelView
+        android:id="@+id/interesting_view"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp"
+        android:nestedScrollingEnabled="true"
+        app:canLoop="true"
+        app:centerTextColor="#ff000000"
+        app:lineColor="@color/colorPrimary"
+        app:textSize="16sp"
+        app:topBottomTextColor="#D5D5D5" />
+
+</LinearLayout>

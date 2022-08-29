@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/nd_appbar_back"
+            android:layout_width="25dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_arrow"
+            android:layout_marginLeft="18dp"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:id="@+id/nd_chat_icon"
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@android:color/white"
+
+                android:src="@drawable/nd_chat_message_icon"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="18dp"
+                android:layout_marginLeft="18dp"
+                />
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
