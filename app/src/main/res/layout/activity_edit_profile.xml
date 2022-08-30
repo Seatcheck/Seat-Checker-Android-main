@@ -64,7 +64,7 @@
                         android:layout_toRightOf="@+id/img_profile_avatar"
                         android:layout_alignParentBottom="true"
                         android:layout_marginLeft="-20dp"
-                        android:src="@drawable/app_icon"
+                        android:src="@drawable/editbtn"
                         />
                 </RelativeLayout>
 
